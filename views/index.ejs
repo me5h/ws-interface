@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Socket.IO chat</title>
-    <link rel="stylesheet" href="toggle.css">
+    <title>MeshWW Socket.IO Interface</title>
+    <link rel="stylesheet" href="/css/toggle.css">
   </head>
   <body>
-    
-    <div class="chat 1">
+    <div id="main-wrapper">
+
+    </div>
+    <div class="logo"></div>
+    <div class="chat">
       <h1>Chat</h1>    
       <ul id="messages"></ul>
       <form id="form" action="">
@@ -31,6 +34,7 @@
         </label>
       </div>
     </div>
+  </div>
     <script src="/socket.io/socket.io.js"> </script>
 
     <script>
