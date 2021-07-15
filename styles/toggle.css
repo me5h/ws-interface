@@ -1,5 +1,5 @@
 .logo {
-  background: url(/img/logo.png) no-repeat bottom;
+  background: url(img/logo.png) no-repeat bottom;
 }
 .control-wrapper {
   position: fixed;
