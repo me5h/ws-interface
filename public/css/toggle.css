@@ -1,5 +1,9 @@
 .logo {
-  background: url(img/logo.png) no-repeat bottom;
+  background: url(/img/ins-black.png) no-repeat bottom;
+  display: block;
+  height: 100px;
+  width: 100px;
+  float: right;
 }
 .control-wrapper {
   position: fixed;
