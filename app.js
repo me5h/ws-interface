@@ -1,4 +1,4 @@
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 const express = require('express')
 const app = express()
 const io = require('socket.io')();
@@ -17,8 +17,7 @@ app.get('', (req, res) => {
   res.render('index', { text: 'This is EJS'})
 })
 
-const PORT = process.env.PORT || 3000;
-const serverInstance = app.listen(port, () => {
+const serverInstance = app.listen(PORT, () => {
   console.log(`Our app is running on port ${ PORT }`);
 });
 
