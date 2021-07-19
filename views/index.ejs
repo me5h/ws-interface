@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>MeshWW Socket.IO Interface</title>
-    <link rel="stylesheet" href="/css/toggle.css">
-  </head>
-  <body>
-  <div id="main-wrapper">
-    <div>
-      <h1>Main Focus</h1>
-      <div id="main-focus"></div>
-    </div>
-    <div class="logo"></div>
-    <div class="chat">
-      <h1>Stream Timeline</h1>    
-      <ul id="messages"></ul>
-      <form id="form" action="">
-        <input id="message-input" autocomplete="off" /><button id="send">Send</button>
-      </form>
-    </div>
 
-    <div class="stats-wrapper">
-      <div>Real Time block</div>
-      <div>Attendies:"Count here"</div>
-      <div>Group Contacts</div>
-    </div>
-    <div class="tabs">
-      <div class="tab-item tab-item-1">Ask a questions</div>
-    </div>
-    <div class="control-wrapper">
-      <div class="admin-panel">Admin Panel</div>
-      <div class="control-item qa"> 
-        <div>Ask a question</div>
-        <label id="control-qa" class="switch">
-          <input id="control-qa-input" type="checkbox" onclick="qaInput()">
-          <span class="slider round"> </span>
-        </label>
+<head>
+  <title>MeshWW Socket.IO Interface</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/toggle.css">
+</head>
+
+<body>
+  <div class="logo"></div>
+  <div id="main-wrapper container">
+    <div class="row">
+      <div class="main-focus col-8">
+        <h1>Main Focus</h1>
+        <div class="content"></div>
+      </div>
+      <div class="chat col-4">
+        <h1>Stream Timeline</h1>
+        <ul id="messages"></ul>
+        <form id="form" action="">
+          <input id="message-input" autocomplete="off" /><button id="send">Send</button>
+        </form>
       </div>
     </div>
-</div>
-    <script src="/socket.io/socket.io.js"> </script>
-    <script src="/js/ws-interface.js"> </script>
-  </body>
+  </div>
+  <div class="stats-wrapper">
+    <div>Real Time block</div>
+    <div>Attendies:"Count here"</div>
+    <div>Group Contacts</div>
+  </div>
+  <div class="tabs">
+    <div class="tab-item tab-item-1">Ask a questions</div>
+  </div>
+  <div class="control-wrapper">
+    <div class="admin-panel">Admin Panel</div>
+    <div class="control-item qa">
+      <div>Ask a question</div>
+      <label id="control-qa" class="switch">
+        <input id="control-qa-input" type="checkbox" onclick="qaInput()">
+        <span class="slider round"> </span>
+      </label>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"> </script>
+  <script src="/js/ws-interface.js"> </script>
+</body>
+
 </html>

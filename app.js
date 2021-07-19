@@ -19,13 +19,13 @@ app.get('', (req, res) => {
 
 const serverInstance = app.listen(PORT, () => {
   console.log(`Our app is running on port ${ PORT }`);
-});
+})
 
 io.attach(serverInstance);
 
 io.on('connection', (socket) => {
   socket.on('chat message', msg => {
     io.emit('chat message', msg);
-  });
-});
+  })
+})
 
