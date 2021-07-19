@@ -6,19 +6,22 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/toggle.css">
+  <script src="/js/sounds.js"> </script>
 </head>
 
 <body>
   <div class="logo"></div>
-  <div id="main-wrapper container">
+  <div class="container">
     <div class="row">
-      <div class="main-focus col-8">
+      <div id="main" class="col-8">
         <h1>Main Focus</h1>
-        <div class="content"></div>
+        <div class="content">
+
+        </div>
       </div>
       <div class="chat col-4">
         <h1>Stream Timeline</h1>
-        <ul id="messages"></ul>
+        <ul id="messages" class="no-bullets"></ul>
         <form id="form" action="">
           <input id="message-input" autocomplete="off" /><button id="send">Send</button>
         </form>
@@ -38,7 +41,8 @@
     <div class="control-item qa">
       <div>Ask a question</div>
       <label id="control-qa" class="switch">
-        <input id="control-qa-input" type="checkbox" onclick="qaInput()">
+        <audio id="wow"> </audio>
+        <button type="button" class="btn btn-primary" onclick="PlaySound">PlaySoundWow</button>
         <span class="slider round"> </span>
       </label>
     </div>
