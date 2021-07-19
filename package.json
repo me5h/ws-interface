@@ -1,5 +1,5 @@
 {
-  "name": "meshww-socket",
+  "name": "ws-interface",
   "version": "0.0.1",
   "description": "Mesh World Wide Vanilla Javascript Socket.io Interface",
   "main": "app.js",

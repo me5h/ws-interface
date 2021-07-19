@@ -17,8 +17,9 @@ app.get('', (req, res) => {
   res.render('index', { text: 'This is EJS'})
 })
 
+const PORT = process.env.PORT || 3000;
 const serverInstance = app.listen(port, () => {
-  console.log('App running at http://localhost:' + port);
+  console.log(`Our app is running on port ${ PORT }`);
 });
 
 io.attach(serverInstance);
