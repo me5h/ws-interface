@@ -6,7 +6,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/toggle.css">
-  <script src="/js/sounds.js"> </script>
 </head>
 
 <body>
@@ -34,21 +33,23 @@
     <div>Group Contacts</div>
   </div>
   <div class="tabs">
-    <div class="tab-item tab-item-1">Ask a questions</div>
+    <div class="tab-item tab-item-1">Toggle item</div>
   </div>
   <div class="control-wrapper">
-    <div class="admin-panel">Admin Panel</div>
-    <div class="control-item qa">
-      <div>Ask a question</div>
+    <div class="admin-panel">Control Panel</div>
+    <div class="control-item">
+      <audio id="sound" src="/sounds/AnimeWowSoundEffect.mp3" preload="auto"> </audio>
+      <button class="btn btn-primary" onclick="document.getElementById('sound').play();">Play
+        it</button>
+      <div>Toggle item</div>
       <label id="control-qa" class="switch">
-        <audio id="wow"> </audio>
-        <button type="button" class="btn btn-primary" onclick="PlaySound">PlaySoundWow</button>
         <span class="slider round"> </span>
       </label>
     </div>
   </div>
   <script src="/socket.io/socket.io.js"> </script>
   <script src="/js/ws-interface.js"> </script>
+  <script src="/js/sounds.js"> </script>
 </body>
 
 </html>

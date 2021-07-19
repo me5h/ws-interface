@@ -14,14 +14,6 @@ form.addEventListener('submit', function (e) {
   }
 });
 
-function PlaySoundWow() {
-  alert("hello");
-var wow = new audio();
-wow.src = "/sounds/AnimeWowSoundEffect.mp3";
-document.getElementById(wow);
-wow.Play();
-}
-
 // Checkbox stuff
 function qaInput() {
   // Get the checkbox
@@ -67,6 +59,7 @@ socket.on('chat message', function (msg) {
   var item = document.createElement('li');
   item.textContent = msg;
   document.body.style.backgroundColor = msg;
+  document.getElementById('sound').play();
   document.getElementById("main").style.backgroundImage = 'url('+msg+')';
   messages.appendChild(item);
   window.scrollTo(0, document.body.scrollHeight);
