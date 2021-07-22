@@ -1,10 +1,3 @@
-.logo {
-  background: url(/img/ins-black.png) no-repeat bottom;
-  display: block;
-  height: 100px;
-  width: 100px;
-  float: right;
-}
 .control-wrapper {
   position: fixed;
   position: fixed;
@@ -94,6 +87,16 @@ ul.no-bullets {
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margins */
 }
-#main .content {
+#main .main-content {
+  height: 100%;
   border-style: solid;
+}
+
+.messages-wrapper {
+  height: 100%;
+}
+
+#main-content {
+  background-repeat: no-repeat;
+  background-size: cover;
 }

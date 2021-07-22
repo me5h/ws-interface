@@ -22,7 +22,7 @@ function qaInput() {
   if (checkBox.checked == true) {
     console.log(checkBox)
     var z = document.createElement('p'); // is a node
-z.innerHTML = 'Ask a question checked';
+    z.innerHTML = 'Ask a question checked';
     socket.emit('checked', 'block');
     messages.appendChild(z);
     checkboxInput.value = '';
@@ -60,7 +60,7 @@ socket.on('chat message', function (msg) {
   item.textContent = msg;
   document.body.style.backgroundColor = msg;
   document.getElementById('sound').play();
-  document.getElementById("main").style.backgroundImage = 'url('+msg+')';
+  document.getElementById("main-content").style.backgroundImage = 'url(' + msg + ')';
   messages.appendChild(item);
   window.scrollTo(0, document.body.scrollHeight);
 });
