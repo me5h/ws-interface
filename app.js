@@ -10,7 +10,6 @@ app.use('/js', express.static(__dirname + 'public/js'))
 app.use('/img', express.static(__dirname + 'public/img'))
 app.use('/sounds', express.static(__dirname + 'public/sounds'))
 
-// Set View's
 app.set('views', './views');
 app.set('view engine', 'ejs');
 
